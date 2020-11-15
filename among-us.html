@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Among Us </title>
+    <link href="style.css" rel="stylesheet" />  
+    <link rel="shortcut icon" href="icon.png" />
+    <link rel="stylesheet" type="text/css" href="icon.png" />
+    <link rel="icon" href="icon.png" sizes="32x32" />  
+</head>
+
+<body>
+    
+    <div id="score_div">
+        Score: <span id="score">0</span> <br>
+        High Score: <span id="high_score">0</span><br>
+        
+    </div>
+    
+    
+    <audio src="43.mp3" autoplay loop ></audio>
+    
+    
+    <div id="container">
+        <div id="line_1" class="line"></div>
+        
+        <div id="line_3" class="line"></div>
+        <div id="car" class="car">
+            <div class="sami"><b> Player </b></div> 
+        </div>
+        <div id="car_1" class="car">
+            <div class="text"><b>Impostor</b></div>
+        </div>
+        <div id="car_2" class="car">
+            <div class="text"><b>Impostor</b></div>
+        </div>
+        <div id="car_3" class="car">
+            <div class="text"><b>Impostor</b></div>
+        </div>
+        <div id="car_4" class="car">
+            <div class="text1"><b>CrewMember</b></div>
+        </div>
+
+        <a href="index.html"><div id="car_5" class="car">
+        </div></a>
+        <div id="car_6" class="car">
+        </div>
+
+        
+        <div id="restart_div">
+            <button id="restart" >
+                
+            </button>
+            <div id="audio">
+                
+            </div>
+        </div>
+        
+    </div>
+
+    
+    
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        let name = sessionStorage.getItem("name");
+        document.querySelector(".name").innerHTML = name;
+    </script>
+    
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url('4.gif');
+    font-family: sans-serif;
+}
+
+#container{
+    position: relative;
+    height: 100vh;
+    width: 40%;
+    margin: auto;
+    background-color: #c248c0;
+    overflow: hidden;
+    border-left: dashed white 10px;
+    border-right: dashed white 10px;
+}
+.line{
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    margin-left: -80px;
+    background-image: url('untitled.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#line_1{
+    top: -150px;
+}
+#line_2{
+    top: 150px;
+}
+#line_3{
+    top: 450px;
+    background-image: url('lava.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 210px;
+}
+.car{
+    position: absolute;
+    height: 80px;
+    width: 60px;
+    border-radius: 5px;
+    
+}
+#car{
+    bottom: 8%;
+    left: 60%;
+    background-image: url('red.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#car_1{
+    top: -100px;
+    left: 60%;
+    background-image: url('green.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#car_2{
+    top: -270px;
+    left: 40%;
+    background-image: url('orange.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#car_3{
+    top: -500px;
+    left: 50%;
+    background-image: url('yellow.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: red 2px;
+}
+#car_4{
+    top: -740px;
+    left: 50%;
+    background-image: url('blue.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: red 2px;
+}
+
+
+#restart_div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:#c248c0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    display: none;
+    
+}
+
+#restart {
+    border: none;
+    padding: 25px;
+    color: white;
+    background-image: url('123.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 30px;
+    margin-top: 30%;
+    height: 350px;
+    width: 400px;
+}
+.small_text{
+    font-size: 15px;
+}
+#score_div{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 70px;
+    font-size: 35px;
+    background-color: white;
+    color: #454545;
+    padding: 10px;
+    box-shadow: 4px 4px 0px 1px #808080;
+}
+.text {
+    margin-top: -19px;
+    color:#8c0606;
+    text-align: center;
+}
+.sami {
+    margin-top: -19px;
+    color: white;
+    text-align: center;
+}
+.text1 {
+    text-align: center;
+    margin-top: -19px;
+    color: white;
+    text-align: center;
+    margin-left: -16px;
+
+}
+#car_5{
+    background-image: url('vent.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 670px;
+    margin-left: 547px;
+}
+#car_6{
+    background-image: url('Sabotage.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 670px;
+    margin-left: 10px;
+ 
+}
+
+.bgm {
+    float: left;
+}
+
+.btn1 {
+    background-image: url('on.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.btn2 {
+    background-image: url('off.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+}
+#audio {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('kill.mp3');
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    display: none;
+}
+

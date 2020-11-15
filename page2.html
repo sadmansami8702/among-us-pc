@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Among Us</title>
+    <link href="page2css.css" rel="stylesheet" />  
+    <link rel="shortcut icon" href="icon.png" />
+    <link rel="stylesheet" type="text/css" href="icon.png" />
+    <link rel="icon" href="icon.png" sizes="32x32" /> 
+</head>
+<body class="bg" id="bg">
+        <div class="text">Instructions</div> 
+        <div class="list">
+            <ol>
+                <li>Read all the insructions before proceeding. </li>
+                <li>Try to play this game on your PC . You cannot play this game on Mobile Phone. </li>
+                <li>Press Arrow Keys to move. Avoid collision with impostors.</li>
+                <li>I'm too lazy to make this game responsive. So, try to play this on PC with fullscreen.</li>
+                <li>There are some impostors and some crewmembers in this game</li>
+                <li>If you don't like to play with sounds, then just mute this site.</li>
+                <li><b>Pro Tip :</b> Never try to run between two impostors.</li>
+                <li>"Sabotage" does nothing in this game and "Vent" is used to return home page.</li>
+                <li>Now insert your name and start playing.Good Luck.</li>
+                <li>Your game will start automatically when you click "Start Game"</li>
+            </ol>
+        </div> 
+        <div>
+            <form name="welcome_form" onclick="submitForm(event)" >
+                
+                
+            </form>
+            <input type="text" class="name" name="name" placeholder="Input Your Name Here" required> <br>
+            <div class="btttn">
+                <a href="among-us.html"><button class="button button5" >Start Game</button></a>
+            </div>
+        </div>
+        <audio src="index.mp3" autoplay loop></audio>  
+
+<script>
+    function submitForm(e) {
+    e.preventDefualt();
+    let name = document.forms["welcome_form"]["name"].value;
+    sessionStorage.setItem("name", name);
+    let name = sessionStorage.getItem("name");
+    document.querySelector(".name").innerHTML = name;
+    location.href = "among-us.html";
+}
+</script>
+</body>
+</html>
